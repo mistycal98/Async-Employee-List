@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+#root {
+  /* all employee cards */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin: 0px auto;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.card {
+  width: 280px;
+  margin: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px 0;
+          box-shadow: 0 4px 8px 0;
+  margin: 3rem;
+}
+
+.card-content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.4rem;
+}
+
+.card-content-header img {
+  height: 35px;
+  width: 35px;
+}
+
+.card-content-header .employee-heading {
+  padding: 0 0.4rem;
+  width: 70%;
+}
+
+.card-content-image {
+  border-radius: 5px;
+  height: 20%;
+}
+
+.card-content-image img {
+  height: 100%;
+  width: 99%;
+  padding: 0.1rem;
+}
+
+.employee-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0.5rem;
+}
+
+.employee-details .employee-detail {
+  padding: 0.1rem;
+  border-bottom: 1.5px solid grey;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.employee-details .voteshare {
+  border: none;
+}
+
+.employee-details .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.1rem;
+}
+
+.employee-details .footer p {
+  font-size: 0.7rem;
+}
+/*# sourceMappingURL=style.css.map */
