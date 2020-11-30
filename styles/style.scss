@@ -36,34 +36,58 @@
   height: 100%;
 }
 
-.card,
-.card-content-header,
-.company-logo,
-.employee-heading,
-.qr-code,
-.card-content-image,
-.employee-detail {
-  border: 1px solid #008080;
-}
-
 .card {
-  width: 270px;
+  width: 280px;
   margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0;
 }
 
 .card-content-header {
   display: flex;
+  padding: 0.4rem;
   // flex-direction: row;
   img {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
   }
   .employee-heading {
+    padding: 0 .4rem;
     width: 70%;
   }
 }
 
-.card-content-image{
+.card-content-image {
   border-radius: 5px;
-  
+  height: 20%;
+  img {
+    height: 100%;
+    width: 99%;
+    padding: 0.1rem;
+  }
+}
+
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5rem;
+  .employee-detail {
+    // border : 1px solid yellow;
+    padding: 0.1rem;
+    border-bottom: 1.5px solid grey;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .voteshare{
+    border: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem;
+    p {
+      font-size: 0.7rem;
+    }
+  }
 }
