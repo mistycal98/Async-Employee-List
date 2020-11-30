@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Card rendering</title>
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body>
+    <h1>Employee List</h1>
+    <div id="root"></div>
+
+    <div class="card">
+      <!-- Card header Logo, Name and Qr -->
+      <div class="card-content-header">
+        <div class="company-logo">
+            <img src="./assets/images/raweng.png" alt="">
+        </div>
+        <div class="employee-heading">
+            <h3>Tushar Mistry</h3>
+            <p>RE | Mumbai, MH | 1234</p>
+        </div>
+        <div class="qr-code">
+            <img src="./assets/images/qrcode.png" alt="Click Here for More Details" srcset="">
+        </div>
+      </div>
+
+      <div class="card-content-image">
+        <img src="" alt="" srcset="">
+      </div>
+      <div class="employee-detail">
+
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+      integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/app.js" type="module"></script>
+  </body>
+</html>
