@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Employee Card rendering</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./dist/css/style.css">
-  </head>
-  <body>
-    <h1>Employee List</h1>
-    <div id="root">
 
-      <div class="card">
-        <!-- Card header Logo, Name and Qr -->
-        <div class="card-content-header">
-          <div class="company-logo">
-            <img src="./assets/images/bjpLogo.png" alt="" />
-          </div>
-          <div class="employee-heading">
-            <h3>Narendra Modi</h3>
-            <p>BJP | Varanasi, UP | 1950</p>
-          </div>
-          <div class="qr-code">
-            <img
-              src="./assets/images/qrcode.png"
-              alt="Click Here for More Details"
-              srcset=""
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Mantri Card</title>
+  <link rel="shortcut icon" href="./assets/favicon.png">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
+</head>
+<body>
+  <!-- Header -->
+  <h1>Employee List</h1>
+  <!-- Main -->
+
+  <!-- Root Div -->
+  <div id="root">
+    <!-- Employee Card Div -->
+    <div class="card">
+      <!-- Card header Logo, Name and Qr -->
+      <center>This is an Example Card</center>
+      <div class="card-content-header">
+        <div class="company-logo">
+          <img src="./assets/images/bjpLogo.png" alt="" />
         </div>
-        <div class="card-content-image">
-          <img src="./assets/images/bjp-narendra-modi.jpg" alt="" srcset="" />
+        <div class="employee-heading">
+          <h3>Narendra Modi</h3>
+          <p>BJP | Varanasi, UP | 1950</p>
         </div>
-        <div class="employee-details">
-          <div class="employee-detail terms">
-            <p class="bold">Number of Terms</p>
-            <p>2</p>
-          </div>
-          <div class="employee-detail education">
-            <p class="bold">Education</p>
-            <p>Post Graduate</p>
-          </div>
-          <div class="employee-detail cc">
-            <p class="bold">Criminal Cases</p>
-            <p>0</p>
-          </div>
-          <div class="employee-detail assets">
-            <p class="bold">Assets</p>
-            <p>₹2.5(Cr)</p>
-          </div>
-          <div class="employee-detail liabilities">
-            <p class="bold">Liabilities</p>
-            <p>₹0(Cr)</p>
-          </div>
-          <div class="employee-detail voteshare">
-            <p class="bold">Vote Share</p>
-            <p>63.62%</p>
-          </div>
-          <div class="footer">
-            <p class="footer-1">17th Lok Sabha</p>
-            <p class="footer-2">narendra.modi@bjp.com</p>
-          </div>
+        <div class="qr-code">
+          <img src="./assets/images/qrcode.png" alt="Click Here for More Details" srcset="" />
         </div>
       </div>
-
-
+      <!-- Card Photo Div -->
+      <div class="card-content-image">
+        <img src="./assets/images/bjp-narendra-modi.jpg" alt="" srcset="" />
+      </div>
+      <!-- Employee Detail Div -->
+      <div class="employee-details">
+        <div class="employee-detail terms">
+          <p class="bold">Number of Terms</p>
+          <p>2</p>
+        </div>
+        <div class="employee-detail education">
+          <p class="bold">Education</p>
+          <p>Post Graduate</p>
+        </div>
+        <div class="employee-detail cc">
+          <p class="bold">Criminal Cases</p>
+          <p>0</p>
+        </div>
+        <div class="employee-detail assets">
+          <p class="bold">Assets</p>
+          <p>₹2.5(Cr)</p>
+        </div>
+        <div class="employee-detail liabilities">
+          <p class="bold">Liabilities</p>
+          <p>₹0(Cr)</p>
+        </div>
+        <div class="employee-detail voteshare">
+          <p class="bold">Vote Share</p>
+          <p>63.62%</p>
+        </div>
+        <div class="footer">
+          <p class="footer-1">17th Lok Sabha</p>
+          <p class="footer-2">narendra.modi@bjp.com</p>
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- Footer Div -->
+  <footer></footer>
 
-    
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
-      integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="src/app.js" type="module"></script>
-  </body>
+  <!-- Axios Library CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+    integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="src/app.js" type="module"></script>
+</body>
+
 </html>
