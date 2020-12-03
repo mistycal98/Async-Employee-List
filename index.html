@@ -12,72 +12,111 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
 </head>
+
 <body>
   <!-- Header -->
-  <header>
-    <div class="nav">
-      <nav></nav>
-    </div>
+  <header class="navigation-bar">
+    <nav class="navigation">
+      <div class="logo-box">
+        <img src="./assets/images/Mantri_Logo_WM-02.png" alt="Official Logo" srcset="">
+      </div>
+      <div class="navigations">
+        <ul class="navigation-links">
+          <li class="navigation-link" id="home">Home</li>
+          <li class="navigation-link">How to Play</li>
+          <li class="navigation-link">FAQs</li>
+          <li class="navigation-link">Know Your Mantri</li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <!-- Main -->
-
-  <!-- Root Div -->
-  <div id="root">
-    <!-- Employee Card Div -->
-    <div class="card">
-      <!-- Card header Logo, Name and Qr -->
-      <center>This is an Example Card</center>
-      <div class="card-content-header">
-        <div class="company-logo">
-          <img src="./assets/images/bjpLogo.png" alt="" />
-        </div>
-        <div class="employee-heading">
-          <h3>Narendra Modi</h3>
-          <p>BJP | Varanasi, UP | 1950</p>
-        </div>
-        <div class="qr-code">
-          <img src="./assets/images/qrcode.png" alt="Click Here for More Details" srcset="" />
-        </div>
+  <main id="article">
+    <div class="banner">
+      <div class="banner-text">
+        <h2 class="banner-title">Mantri Card is Lok Sabha Card Game</h2>
       </div>
-      <!-- Card Photo Div -->
-      <div class="card-content-image">
-        <img src="./assets/images/bjp-narendra-modi.jpg" alt="" srcset="" />
+      <div class="banner-image">
+        <img src="./assets/images/banner.jpg" alt="Banner" srcset="">
       </div>
-      <!-- Employee Detail Div -->
-      <div class="employee-details">
-        <div class="employee-detail terms">
-          <p class="bold">Number of Terms</p>
-          <p>2</p>
+    </div>
+    <!-- Mantri Card Div -->
+    <div id="mantri-card">
+      <!-- Invidual Mantri Card Div -->
+      <div id="#home" class="card">
+        <!-- Card header Logo, Name and Qr -->
+        <center>This is an Example Card</center>
+        <div class="card-content-header">
+          <div class="company-logo">
+            <img src="./assets/images/bjpLogo.png" alt="" />
+          </div>
+          <div class="employee-heading">
+            <h3>Narendra Modi</h3>
+            <p>BJP | Varanasi, UP | 1950</p>
+          </div>
+          <div class="qr-code">
+            <img src="./assets/images/qrcode.png" alt="Click Here for More Details" srcset="" />
+          </div>
         </div>
-        <div class="employee-detail education">
-          <p class="bold">Education</p>
-          <p>Post Graduate</p>
+        <!-- Card Photo Div -->
+        <div class="card-content-image">
+          <img src="./assets/images/bjp-narendra-modi.jpg" alt="" srcset="" />
         </div>
-        <div class="employee-detail cc">
-          <p class="bold">Criminal Cases</p>
-          <p>0</p>
-        </div>
-        <div class="employee-detail assets">
-          <p class="bold">Assets</p>
-          <p>₹2.5(Cr)</p>
-        </div>
-        <div class="employee-detail liabilities">
-          <p class="bold">Liabilities</p>
-          <p>₹0(Cr)</p>
-        </div>
-        <div class="employee-detail voteshare">
-          <p class="bold">Vote Share</p>
-          <p>63.62%</p>
-        </div>
-        <div class="footer">
-          <p class="footer-1">17th Lok Sabha</p>
-          <p class="footer-2">narendra.modi@bjp.com</p>
+        <!-- Employee Detail Div -->
+        <div class="employee-details">
+          <div class="employee-detail terms">
+            <p class="bold">Number of Terms</p>
+            <p>2</p>
+          </div>
+          <div class="employee-detail education">
+            <p class="bold">Education</p>
+            <p>Post Graduate</p>
+          </div>
+          <div class="employee-detail cc">
+            <p class="bold">Criminal Cases</p>
+            <p>0</p>
+          </div>
+          <div class="employee-detail assets">
+            <p class="bold">Assets</p>
+            <p>₹2.5(Cr)</p>
+          </div>
+          <div class="employee-detail liabilities">
+            <p class="bold">Liabilities</p>
+            <p>₹0(Cr)</p>
+          </div>
+          <div class="employee-detail voteshare">
+            <p class="bold">Vote Share</p>
+            <p>63.62%</p>
+          </div>
+          <div class="footer">
+            <p class="footer-1">17th Lok Sabha</p>
+            <p class="footer-2">narendra.modi@bjp.com</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Why Buy Div -->
+    <article>
+      <div class="why-buy">
+        <h1>Why Buy Mantri Cards</h1>
+        <p>After the largest demonstration of democracy the world had ever seen (900 million people) concluded earlier
+          in 2019, the 17th Lok Sabha will hold office until 2024. Perhaps it’s time we get to know our leaders, and
+          what better way to start than with the information they declare themselves, before standing for power!
+          <br><br>
+          Owning a deck of Mantri Cards will not only build your awareness about the people who occupy some of the
+          highest offices in our nation, but will also serve as a gateway to informed discussions on our political
+          system.
+          <br><br>
+          After all, we have a stake in the society we live in, and that stake extends beyond our vote. It's whom we
+          voted for.</p>
+      </div>
+    </article>
+  </main>
   <!-- Footer Div -->
-  <footer></footer>
+  <footer>
+    <div class="page-footer"></div>
+  </footer>
 
   <!-- Axios Library CDN  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"

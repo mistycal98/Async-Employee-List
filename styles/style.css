@@ -8,7 +8,79 @@ body {
   font-family: Roboto;
 }
 
-#root {
+.navigation-bar {
+  background-color: #42327c;
+}
+
+.navigation-bar .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.navigation-bar .navigation img {
+  width: 100px;
+  height: 100px;
+}
+
+.navigation-bar .navigation .navigation-links {
+  padding: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation-bar .navigation .navigation-links .navigation-link {
+  margin: 0.4rem;
+  padding: 1rem;
+  list-style-type: none;
+  color: white;
+}
+
+.navigation-bar .navigation .navigation-links .navigation-link:hover {
+  background-color: white;
+  border-radius: 5px;
+  color: #42327c;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #fee74b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.banner .banner-title {
+  width: 40%;
+  font-size: 2rem;
+  margin: 0 4rem;
+  text-align: left;
+}
+
+.banner .banner-image {
+  margin: auto;
+}
+
+#mantri-card {
   /* all employee cards */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +93,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   /* border: 1px solid black; */
   margin: 0px auto;
 }
@@ -108,5 +180,46 @@ body {
 
 .employee-details .footer p {
   font-size: 0.7rem;
+}
+
+.why-buy {
+  background-color: #fee74b;
+  padding: 5rem;
+  text-align: center;
+  color: #42327c;
+  font-weight: 400;
+}
+
+.why-buy h1 {
+  font-size: 3rem;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+.why-buy p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.page-footer {
+  background-color: #42327c;
+  height: 30vh;
+}
+
+@media (max-width: 756px) {
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .banner-image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
