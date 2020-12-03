@@ -17,7 +17,7 @@ export const renderMantriCard  = (mantri) => {
     </div>
     <div class="employee-heading">
       <h3>${mantri.firstName} ${mantri.lastName}</h3>
-      <p>${mantri.party} | ${mantri.state}, ${mantri.country} | ${mantri.birthYear}</p>
+      <p>${mantri.party} | ${mantri.place}, ${mantri.state} | ${mantri.birthYear}</p>
     </div>
     <div class="qr-code">
       <img
